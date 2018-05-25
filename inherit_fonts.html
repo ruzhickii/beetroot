@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Размеры шрифтов</title>
+		<meta charset="utf-8">
+<style type="text/css">
+</style>
+	</head>
+<body>
+<!--   исследуем  наследование  шрифтов
+По  умолчанию  размер шрифта =  16px
+Если задать стиль   *{font-size : 1.5em; }  
+то получится  что размер шрифта будет:
+    - для элемента html  16 x 1.5 =  24px;
+	- для элемента  body  24px x  1.5 = 36px;
+	- для элемента c class="one" 36px x  1.5 = 54px;
+	- для элемента c class="two" 54px x  1.5 = 36px;
+Вывод:
+Cвойства шрифтов наследуются  и задавать размер шрифтов 
+в % или em надо осторожно. 
+-->
+Текст в BODY будет  36px
+<div class="one">
+	Текст в DIV  c class="one"  будет  54px
+	<div  class="two">Текст в DIV c class="two"  будет 81px</div>
+</div> 
+
+
+
+</body>
+</html>
