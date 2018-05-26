@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <title>Маркированный список</title>
+    <meta charset="utf-8">
+ </head>
+<style>
+
+.list-box {
+	font-size:2em;
+	border: 5px  dotted red;
+	/* padding: 0; */
+}
+
+.list-box__item{
+	/*  list-style-type: circle; */
+	/*  list-style-position: inside;  */
+	/*  list-style-image: url(img/im.png);  */
+	/*  list-style:inside url(img/im.png);  */
+}
+
+</style>
+
+<body>
+<!--
+По умолчанию у элемента UL есть отступы слева
+(	для IE - margin-left:40px;
+	для всех остальныхбраузеров padding-left:40px;
+)
+Они нужны для того чтобы был виден маркер у элементов LI
+Если для элемента UL с классом  .myul  поставить padding:0;
+то увидим как маркеров не будет видно.
+-->
+<div id="outer">
+    <h2>Маркированный список</h2>
+
+	<ul class="list-box">
+       <li  class="list-box__item">
+			Первый пункт <br>
+			и еще несколько строк <br>
+			и еще несколько строк <br>
+			и еще несколько строк <br>
+	   </li>
+       <li  class="list-box__item">Второй пункт</li>
+       <li class="list-box__item">Третий пункт</li>
+       <li  class="list-box__item">Четвертый пункт</li>
+    </ul>
+</div>
+
+
+</body>
+
+
+</html>

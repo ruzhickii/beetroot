@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Свойства margin</title>
+		<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+.outer {
+	background-color:#69c;
+	padding:100px;
+	font-size:20px;
+	position: relative;
+}
+.inner {
+	background-color:#ffc;
+	height:150px;
+	margin:30% 0 0;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.res {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	font-size: 3rem;
+	color: navy;
+}
+.res::after {
+	content: 'px';
+	margin-left: 6px;
+}
+.arrow {
+	width: 3px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: 48%;
+}
+.arrow::before {
+	content: '';
+	display: block;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent;
+	border-top-color: red;
+	position: absolute;
+	top: calc(100% - 10px);
+	left: calc(50% - 10px);
+}
+.arrow::after {
+	content: '';
+	display: block;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: red;
+	position: absolute;
+	top: -10px;
+	left: calc(50% - 10px);
+}
+
+
+</style>
+</head>
+<body>
+<div class="outer">
+	<div class="inner">
+		Если изменять ширину окна браузера, то можно увидеть, что
+		<b>margin = 30%</b> (это отступ этого блока сверху) тоже изменяется.
+		<br> Это говорит о том, что если margin задан в % он расчитывается исходя их ширины родителя (контейнера элемента)
+	</div>
+
+		<span id="res" class="res"></span>
+		<div id="arrow" class="arrow"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+	const inner = document.querySelector('.inner');
+	const res = document.getElementById('res');
+	const arrow = document.getElementById('arrow');
+
+	function handleResize(e){
+		res.innerHTML =  inner.offsetTop;
+		arrow.style.height = inner.offsetTop + 'px';
+	}
+	handleResize()
+	window.addEventListener('resize', handleResize, false)
+
+
+</script>
+
+</body>
+</html>

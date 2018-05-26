@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Отрицательный margin</title>
+		<meta charset="utf-8">
+<style>
+.box {
+	width: 80%;
+	margin: auto;
+	border: 1px dotted red;
+}
+.box__first,
+.box__second {
+	height: 100px;
+	width: 250px;
+	text-align: center;
+	font-size: 30px;
+}
+.box__first {
+	background-color:#69c;
+}
+.box__second {
+	background-color:#fcf;
+}
+
+.box__first_top {
+	margin-bottom: 100px;
+}
+
+.box__second_top {
+
+}
+
+
+/*  =================== BOTTOM =========== */
+
+.box_bottom {
+	margin-top: 40px;
+}
+.box_bottom::after {
+	content: '';
+	display: table;
+	clear:both;
+}
+
+.box__first_bottom,
+.box__second_bottom {
+	float: left;
+}
+
+.box__first_bottom {
+
+}
+
+.box__second_bottom {
+	margin-top: 20px;
+	height: 110px;
+}
+
+/*  =================== width: auto =========== */
+.container {
+	width: 80%;
+	margin: 30px auto 0;
+	border: 4px dotted red;
+}
+.box__auto-width {
+    width: auto;
+	height: 150px;
+    background: lightblue;
+	/* margin-left: -50px; */
+	/* margin-right: -50px; */
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+	<div class="box__first box__first_top">First</div>
+	<div class="box__second box__second_top">Second</div>
+</div>
+
+<hr>
+
+<div class="box box_bottom">
+	<div class="box__first box__first_bottom">First</div>
+	<div class="box__second box__second_bottom">Second</div>
+</div>
+
+
+<div class="container">
+	<div class="box__auto-width"></div>
+</div>
+
+
+</body>
+</html>

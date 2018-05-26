@@ -1,0 +1,58 @@
+ * {
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 80%;
+	margin: 30px auto 0;
+}	
+.box {
+	border: 3px solid navy;
+}		
+.box__item {
+	color: white;
+	font-size: 18px;
+}
+
+.box__item_blue {
+    background-color:blue;
+}
+.box__item_purple {
+    background-color: purple;
+}
+.box__item_green {
+    background-color: green;
+}
+.box__item_yellow {
+    background-color: yellow;
+	color:red;
+}
+.box__item_orange {
+    background-color: orange;
+}
+.box__item_darkgrey  {
+    background-color: darkgray;
+}
+.box__item_darkorchid  {
+    background-color: darkorchid;
+}
+.box__item_darksalmon {
+    background-color: darksalmon;
+}
+.box__item_deepskyblue {
+    background-color: deepskyblue;
+}
+.box__item_greenyellow {
+    background-color: greenyellow;
+}
+
+.box__item_maroon {
+    background-color: maroon;
+}
+
+.box__item_rebeccapurple {
+    background-color: rebeccapurple;
+}
+
+

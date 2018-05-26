@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>inline block</title>
+		<link rel="stylesheet" href="css/style.css">
+	<style>
+		.box {
+
+		}
+		.box__item {
+
+    	}
+
+
+	</style>
+</head>
+<body>
+<!--
+1. Для box__item задать ширину 25%, padding: 1em;
+
+2. Нам нужно чтобы блоки располагались рядом с друг другом,
+   и в то же время они оставались блоками(то есть в них можно было распологать блочный контент)
+   Для этого для box__item ставим свойство display: inline-block;
+
+   При этом несмотря на то, что мы задали каждому блоку ширину
+   25%, и в одной строке должно располагаться 4 блока,
+    у нас получилось 3 блока в строке и пробелы между ними
+	Это потому, что между блоками присутствует перенос строки
+	(вспоминаем из 1-го занятия что является пробелом в HTML коде)
+
+3. Контейнеру .box присвоить font-size: 0;
+   .box__item присвоить font-size: 18px;
+
+4. Для box__item  задать border  2px solid white;
+
+5. Выравниваем текст по горизонтали по центру блока
+   Для этого для box__item  задать text-align: center;
+
+6. Блоку Box 3 присвоить width: 50%;
+   При этом ширина всех остальных блоков не должна измениться
+
+7. Задать для box__item высоту 100px
+   Как теперь выровнять текст в блоке по вертикали ?
+   Это самый больной вопрос в верстке, и для этого в CSS 3 были
+   введена технология flexbox, которую нам еще предстоит выучить.
+
+   А пока можно сделать так
+    - если в блоке одна строка - выставляем для box__item
+	  свойство line-height равным высоте блока, то есть line-height: 100px;
+	  А свойство padding: 1em убираем
+
+   - если в блоке несколько строк (раскомментировать Box 8) то
+     тогда выравнивать контент в блоке по вертикали можно так
+      A. убрать line-height, height
+      B. Выставить padding-top, padding-bottom в такие значения
+          чтобы их сумма с font-size давала нужную высоту
+          Например font-size: 18px + віносы для строки 4px
+          100px - 24px = 76px / 2 = 38px
+          То если строка одна
+              padding-top: 38px; padding-bottom: 38px;
+      При этом высота блока Box 8 больше чем всех остальных блоков, так как в нем 2 строки
+
+Поэтому этот способ также не решает полностью задачу
+выравнивания многострочного контента в блоке по вертикали
+при фиксированной высоте блока.
+
+
+-->
+
+
+  <div class="container">
+		<div class="box">
+
+			<div class="box__item box__item_blue">Box 1</div>
+			<div class="box__item box__item_purple">Box 2</div>
+			<div class="box__item box__item_green">Box 3</div>
+			<div class="box__item box__item_maroon">Box 4</div>
+			<div class="box__item box__item_orange">Box 5</div>
+			<div class="box__item box__item_darkgrey">Box 6</div>
+			<div class="box__item box__item_darkorchid">Box 7</div>
+			<div class="box__item box__item_yellow">Box 8<br>line two</div>
+
+		</div><!-- /.box-->
+
+  </div><!-- /.container-->
+
+
+</body>
+</html>
