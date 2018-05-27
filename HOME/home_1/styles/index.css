@@ -18,6 +18,12 @@ body {
     text-align: center;
     color: #fff;
     border-bottom: 5px solid #fff;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.weather-box__item:hover {
+    opacity: 1;
 }
 
 .weather-box__city {
