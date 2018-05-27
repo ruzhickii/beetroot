@@ -18,12 +18,12 @@ body {
     text-align: center;
     color: #fff;
     border-bottom: 5px solid #fff;
-    opacity: 0.3;
     transition: 0.5s;
+    filter: grayscale(100%);
 }
 
 .weather-box__item:hover {
-    opacity: 1;
+    filter: grayscale(0);
 }
 
 .weather-box__city {
