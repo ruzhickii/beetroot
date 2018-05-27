@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <title>Применение позиционирования блоков</title>
+    <meta charset="utf-8">
+<style>
+ body {
+    font-size: 18px;
+ }
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.header {
+	height:100px;
+	background:#f88;
+	padding:1px 0;
+}
+.footer {
+    height:100px;
+    background:#f88;
+    text-align:center;
+}
+
+
+
+.box {
+	height:300px;
+	background: #e2e2e2;
+
+/* position:relative; */
+}
+
+.box__author{
+	background: teal;
+    color: white;
+  /*position:absolute; */
+  /*  top:0;
+  	  right:0;
+  */
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+    		<h1 class="header__title">Заголовок</h1>
+    	</div>
+
+    	<div class="box">
+    		<p class="box__content">Содержимое блока id=contents</p>
+    		<div class="box__author">Это блок об авторе</div>
+    	</div>
+
+    	<div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+
+

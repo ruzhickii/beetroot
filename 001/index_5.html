@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Суперконтора</title>
+    <meta charset="utf-8">
+ <style>  
+   body {font-size:1.2em; padding:0; margin:0;}
+  .header {  
+		background-color:darkred; 
+		color:white;
+	} 
+	.header h1 {  
+		margin:20px 0 10px 0;  
+		background-color:red; 
+	}
+	.header p {  margin:5px 0;}
+
+/* 1-й способ
+=============================  */	    
+	.header { 
+		/* padding:1px 0;*/       
+		/* border-top:1px solid red; */ 
+	} 
+
+/* 2-й способ
+=============================  */	    
+	/* 
+	.header {   overflow:hidden;}
+	*/
+
+/* 3-й способ 
+=============================  */	    
+	/* 
+	.header {   float:left;  }
+	*/
+
+</style>
+</head>
+
+<body>
+<div class="header">
+   <h1>Суперконтора</h1>
+   <p>Суперконторим с 1381 года</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  ЭТО объяснение -->
+
+<div style="width:90%; margin:auto;">
+<h3 id="explain" class="close" style="cursor:pointer; margin:0;margin-top:50px;">Открыть объяснение</h3>     
+<div id="block3">
+<table width="100%">
+<tr>
+<td width="400px" valign="top">
+<pre style="font:bold 18px 'Courier New'; background:#fcc; margin:0; padding-left:5px;">
+&lt;div id="header"&gt;
+    &lt;h1&gt;Суперконтора&lt;/h1&gt;
+    &lt;p&gt;Суперконторим с 1381 года&lt;/p&gt;
+&lt;/div&gt;
+<hr>
+h1{ margin:20px 0 10px 0;  
+    background-color:red;  
+}
+p { margin:5px 0;}
+</pre>
+</td>
+<td valign="top">
+Белое пространство над верхним блоком - это вывалившийся из него верхний <b>margin</b> h1<br>
+<i><b>Это значит что свойство margin от потомка (в нашем случае это элемент h1) 
+передается родителю(в нашем случае это блок с id=header).</b></i><br>
+Существует несколько способов, отменяющих вываливание границ элементов за пределы контейнера.</b>
+<br><br>
+<b>Передача margin от потомка к родителю  отменяется, если: </b><br> 
+1. Содержащему блоку (нашем случае это div id="header" ) назначить padding или border (с той стороны, где вываливается). <br><br>
+В нашем примере к стилям блока с  id="header" надо добавить: <b>#header {padding:1px 0; }</b>
+<br>Минус этого способа состоит в том, что высота всего верхнего блока увеличивается на 2 пиксела.
+<br><br>
+2. Назначить  содержащему блоку свойство  overflow:hidden <br><br>
+3.  Для блоков, исключенных из потока, вываливание отменяется. <br>
+    А чтобы изъять блок из потока ему можно назначить <b>float:left (или float:right)</b><br>
+
+</td></tr></table>   
+</div>
+  
+ <script>
+	var explainTable = document.getElementById('block3');
+	explainTable.style.display='none';
+	document.getElementById('explain').onclick = function (){
+		var cl = this.className;
+		switch(cl){
+			case 'close':
+				explainTable.style.display='block';
+				this.className='open';
+				this.innerHTML="Закрыть задание";
+				break;
+			case 'open':
+				explainTable.style.display='none';
+				this.className='close';
+				this.innerHTML="Открыть задание";
+				break;	
+		}
+		
+	}
+	
+</script>
+</div>                  
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Применение позиционирования</title>
+    <meta charset="utf-8">
+<style>  
+	*{ padding:0; margin:0;}
+	.header {
+		height:100px; 
+		background:#d3ecfc;
+		text-align:center;
+	}
+	.container { 
+		background:#cbffd5;
+		height:300px;
+	 /*  margin-right:200px;  */     
+	}
+	.aside{ 
+		background:#ffe2e2; 
+	    width:200px;
+		height:300px;
+	/*
+		position:absolute; 
+		top:100px; 
+		right:0;
+	*/ 
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome to our site</h1>
+	</div>
+   
+	<div class="container">
+		1. Делаем блок #box2 абсолютно позиционируемым шириной 200px <br> 
+			с координатами top:100px; right:0;  <br>
+		2. Для блока #box1 задать правый margin равный ширине блока  #box2	
+		<p>Lorem ipsum quidam takimata adipiscing te cum, ei accusata senserit qui. Pri accusata ullamcorper eu, has natum tollit qualisque cu. Ne zzril putent cetero sed, vel graece ponderum te. Vix an liber gloriatur, harum discere platonem vel ei.
+	</div>
+
+	<div class="aside"> содержимое блока2  </div>
+          
+</body>
+</html>

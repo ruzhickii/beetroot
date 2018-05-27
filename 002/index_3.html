@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Схлопывание родительского блока</title>
+    <meta charset="utf-8">
+<style>
+.container{
+    max-width: 80%;
+    margin: auto;
+    border:1px solid red;
+    background:#ffe2e2;
+/*  overflow:hidden; */
+}
+
+.im {
+	float:right;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<img class="im" src="img/0011.jpg">
+		<p>Немного текста</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Объяснение-->
+<div style="clear:both;"></div>
+<div  style=" margin-top:50px; overflow:hidden;">
+<hr />
+<div style="float:right; width:40%;">
+<pre>
+&lt;div id="outer"&gt;
+   &lt;img id="im"  src="img/001.jpg" /&gt;
+   &lt;p&gt;Немного текста&lt;p&gt;
+&lt;/div&gt;
+<hr />
+#outer{
+    border:1px solid red;
+    background:#ffe2e2;
+}
+#im {float:right;}
+</pre>
+</div>
+<div style="margin-right:50%; padding-left:10px;">
+Родительский блок (то есть содержащий  блок с  id="outer" ) схлопывается так как не содержит контента<br/><br/>
+
+>>>>>> Чтобы содержащий  блок с  id="outer"  по высоте не схлопывался надо ему добавить стилевок
+свойство   <b>overflow:hidden;</b>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

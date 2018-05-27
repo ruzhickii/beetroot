@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculation.html</title>
+    <meta charset="utf-8">
+<style>
+
+.wrap{
+	width:500px;
+	height: 300px;
+	background:#fcf;
+
+}
+.inner {
+	background:#ccf;
+	width:400px;
+	margin:0 200px;
+	margin-top:50px;
+	height:200px;
+	
+}
+
+</style>
+    </head>
+<body>
+
+<!--
+Для блока с id="inner" задано
+-------------------------------------------------
+ margin-left |  width   | margin-right  | 
+-------------------------------------------------
+    200px    |  400px   |   200px       | 800
+------------------------------------------------
+Смотрим в таблицу - это пункт 1:
+margin-right -> сбрасывается в  auto
+margin-left + width = 600px;
+
+Контейнером для блока с id="inner" 
+является блок с id="wrapper" шириной  500px	
+Поэтому по формуле расчитывается
+	margin-right = 500px - 600px = -100px;
+	
+
+-->
+<div class="wrap">
+	<div class="inner"></div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

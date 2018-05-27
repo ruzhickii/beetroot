@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position block</title>
+    <meta charset="utf-8">
+<style>
+
+.container {
+    width:400px;
+	height:300px;
+	margin:130px auto;
+	border:1px solid red;
+      position:relative;
+}
+.container p {
+    margin:0;
+    position:absolute;
+    width:200px;
+    height: 100px;
+    text-align:center;
+}
+.one{background: #e2e2e2;}
+.two{background: #84f405;}
+.three{background: #00e2ca;}
+.four{background: #e294bf;}
+
+.top{
+       
+}
+.right {
+   
+}
+.bottom{
+   
+}
+.left {
+   
+}
+
+
+
+</style>
+    </head>
+<body>
+
+ <!--   -->
+
+<div class="container">
+   <!-- выставить блок над веpхним левым углом родителя  -->
+    <p class="one top left">Absolute Outside<br>Top Left</p>
+
+    <!-- выставить блок над веpхним правым углом родителя  -->
+    <p class="two top right">Absolute Outside<br>Top Right</p>
+
+    <!-- выставить блок над нижним левым углом родителя  -->
+    <p class="three bottom left">Absolute Outside<br>Bottom Left</p>
+
+    <!-- выставить блок над нижним правым углом родителя  -->
+    <p class="four bottom right">Absolute Outside<br>Bottom Right</p>
+</div>
+ 
+
+
+
+
+
+</body>
+</html>

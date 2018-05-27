@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Свойство clear</title>
+    <meta charset="utf-8">
+<style>
+body {font-size:1.5em;}
+#outer{
+	border:1px solid red;
+	background:#ffe2e2;
+	overflow:hidden; 
+}
+.im {
+	float:left;
+	margin:5px 10px; 
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+   <img class="im"  src="img/002.jpg">
+   <img class="im"  src="img/003.jpg">
+   <img class="im"  src="img/004.jpg">
+
+<!--      <div style="clear:both;"></div>    -->
+   
+   <img class="im"  src="img/005.jpg">
+   <img class="im"  src="img/006.jpg">
+   <img class="im"  src="img/007.jpg">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Объяснение-->
+<div style="clear:both;"></div>
+<div  style=" margin-top:50px; overflow:hidden;">
+<hr />
+<div style="float:right; width:40%;">
+<pre>
+&lt;div id="outer"&gt;
+   &lt;img class="im"  src="img/002.jpg" /&gt;
+   &lt;img class="im"  src="img/003.jpg" /&gt;
+   &lt;img class="im"  src="img/004.jpg" /&gt;
+    
+   &lt;img class="im"  src="img/005.jpg" /&gt;
+   &lt;img class="im"  src="img/006.jpg" /&gt;
+   &lt;img class="im"  src="img/007.jpg" /&gt;
+&lt;/div&gt;
+<hr />
+#outer{ 
+   border:1px solid red; 
+   background:#ffe2e2;
+}
+.im { 
+  float:right;
+  margin:0 10px;
+}
+</pre>
+</div>
+<div style="margin-right:50%; padding-left:10px;">
+Все изображения  "уходят"  влево <br/><br/>
+Чтобы прекратить действия float надо использовать стиль <b>clear:both; </b><br/><br/>
+Например, чтобы прекратить действия float после 3-го изображения надо после него  добавить
+<br/><br/>
+  <b>&lt;div style="clear:both;"&gt;&lt;/div&gt;</b>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

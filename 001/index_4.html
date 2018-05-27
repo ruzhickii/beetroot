@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<title>Margins collapsing</title>
+	<meta charset="utf-8">
+<style>
+	body{font-size:20px;}
+	.wrap{
+		margin: 20px 0;
+		background:#ffc;
+	}
+	p { 
+		margin:60px 0;
+		padding:10px;
+		background:#ccf;
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<p>Первый параграф</p>
+	<p>Второй параграф</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   ЭТО объяснение, а не рабочий код-->
+<div style="float:right; width:50%; border:1px solid black; padding:10px;">
+<pre>
+&lt;div&gt;
+	&lt;p&gt;Первый параграф&lt;/p&gt;
+	&lt;p&gt;Первый параграф&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;p&gt;Первый параграф во втором DIV&lt;/p&gt;
+	&lt;p&gt;Первый параграф во втором DIV&lt;/p&gt;
+&lt;/div&gt;
+<br />
+div {margin: 20px 0;  background:#ffeafb;}
+p { margin:60px 0;  background:#ccc;}
+</pre>
+</div>
+<div style="margin-right:55%;  border:1px solid black; padding:10px;">
+
+По логике вроде должно быть так <br /><br />
+- margin для DIV = 20px  и ожидаем что между ними  будет  20px <br /><br />
+Но реально расстояние между блоками будет 60px<br /> 
+(то есть большему из margin-ов P и DIV ) <br /><br />
+И между параграфами расстояние не 60 + 60 = 120 а 60px
+
+
+ <br /><br />
+Кроме  того обратите внимание на то что внутри блока DIV вверху первого и внизу крайнего параграфов
+отсутствуют margin-ы (точнее они есть, но они вывалены за пределы блока) <br /><br />
+
+Но стоит задать для блока DIV  <b>border</b> или нижний(верхний) <b>padding</b> (даже 1 px) и схлопывание прекратится
+ 
+
+</div>
+
+</body>
+</html>
