@@ -3,63 +3,63 @@
 <head>
     <title>Caclculate margins</title>
     <meta charset="utf-8">
-<style>
+    <style>
 
-.wrap {
-    width:400px;
-	height:150px;
-	margin:20px auto;
-	border:1px solid red;
-   position:relative;
-}
-.wrap__item {
-    padding: 10px 0;
-}
-.wrap__item_left {
-    width:220px;
-    background:#999;
-/* Выставить блок c помощью margins на слева от родительского блока*/
-   
-}
-.wrap__item_right {
-    width:220px;
-    background: #9da4e2;
-    /*Блок выставить c помощью margins справа от родительского блока*/
- 
-}
-.wrap__item_float-left {
-    width:220px;
-    background: #b0ff0e;
-    float:left;
-    /*Блок выставить c помощью margins слева от родительского блока*/
- 
-}
-.wrap__item_float-right {
-    width:220px;
-    background: #b1fff5;
-    float:left;
-    /*Блок выставить c помощью margins справа от родительского блока*/
- 
-}
+        .wrap {
+            width:400px;
+            height:150px;
+            margin:20px auto;
+            border:1px solid red;
+            position:relative;
+        }
+        .wrap__item {
+            padding: 10px 0;
+        }
+        .wrap__item_left {
+            width:220px;
+            background:#999;
+            /* Выставить блок c помощью margins на слева от родительского блока*/
+            margin-left: -220px;
+        }
+        .wrap__item_right {
+            width:220px;
+            background: #9da4e2;
+            /*Блок выставить c помощью margins справа от родительского блока*/
+            margin-left: 100%;
+        }
+        .wrap__item_float-left {
+            width:220px;
+            background: #b0ff0e;
+            float:left;
+            /*Блок выставить c помощью margins слева от родительского блока*/
+            margin-left: -220px;
+        }
+        .wrap__item_float-right {
+            width:220px;
+            background: #b1fff5;
+            float:left;
+            /*Блок выставить c помощью margins справа от родительского блока*/
+            margin-left: 100%;
+        }
 
-</style>
-    </head>
+    </style>
+</head>
 <body>
 
- <!--   -->
+<!--   -->
 
 <div class="wrap">
     <p class="wrap__item wrap__item_left">Sized Block Outside Left</p>
     <p class="wrap__item wrap__item_right">Sized Block Outside Right</p>
 </div>
- 
+
 
 
 <div class="wrap">
-        <p class="wrap__item wrap__item_float-left">Sized Float Outside Left</p>
-        <p class="wrap__item wrap__item_float-right">Sized Float Outside Right</p>
-    </div>
-    
+    <p class="wrap__item wrap__item_float-left">Sized Float Outside Left</p>
+    <p class="wrap__item wrap__item_float-right">Sized Float Outside Right</p>
+</div>
+
 
 
 

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, serif;
+}
+.img-fluid {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    background: red;
+}
+.wrap-card {
+    font-size: 0;
+    margin-left: -10px;
+}
+
+
+.card{
+    width: 25%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-size: initial;
+    padding-left: 10px;
+}
+.card__inner {
+    border: 1px solid grey;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__img img {
+    vertical-align: top;
+ }
+.card__content {
+    padding: .7rem;
+}
+
+.card__content_top-bordered {
+    border-top: 1px solid gray;
+}
+.card__name {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.card__date {
+    color: gray;
+    margin-bottom: 6px;
+}
+.card__ico {
+    color: gray;
+    position: relative;
+    top: -2px;
+}
+.card__friends a {
+    font-size: 20px;
+    color: darkgrey;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+.card__friends a:hover {
+    color: navy;
+}

@@ -5,13 +5,13 @@
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 12px;
 }
 .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    /*margin-left: -12px;*/
+    /*margin-right: -12px;*/
 }
 .row::after {
     content: '';
@@ -20,8 +20,6 @@
 }
 .col{
     float: left;
-    border-left: 2px solid gold;
-    border-right: 2px solid gold;
 }
 
 .col-1 {width: 8.333333333333333%;}
@@ -34,12 +32,4 @@
 .col-9 {width: 75%;}
 .col-12 {width: 100%;}
 
-.row_gallery {
-    font-size: 0;
-}
-.photo-gallery {
-    display: inline-block;
-    vertical-align: top;
-    width: 25%;
-    font-size: initial;
-}
+

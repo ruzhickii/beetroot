@@ -3,66 +3,51 @@
 <head>
     <title>Position block</title>
     <meta charset="utf-8">
-<style>
-* {
-    box-sizing: border-box;
-}
-.wrap {
-    position: relative;
-    width: 1000px;
-    margin: 100px auto 0;
-    border: 1px dotted red;
-    position: relative;
-    padding: 50px;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .wrap {
+            position: relative;
+            width: 1000px;
+            margin: 100px auto 0;
+            border: 1px dotted red;
+            padding: 50px;
+        }
+        .wrap__item {
+            position: absolute;
+            background: navy;
+            color: white;
+            text-align: center;
+        }
+        /* смещаем абсолютно позиционируемый на правую сторону родителя */
+        .wrap__item {
+            /*right: 0;*/
+        }
+        /* растягиваем абсолютно позиционируемый блок по высоте за пределы  родителя  */
+        .wrap__item {
+            /*    left: -50px;
+                right: -50px;*/
+        }
+        .wrap__item {
 
-.wrap__item {
-    position: absolute;
-    background: navy;
-    color: white;
-    text-align: center;
-}
-
-/* смещаем абсолютно позиционируемый на правую сторону родителя */	
-.wrap__item {
-   
-}
-
-/* растягиваем абсолютно позиционируемый блок по высоте за пределы  родителя  */
-.wrap__item {
-  
-}
-
-
-.wrap__item {
-  
-}
-
-
-/* растягиваем абсолютно позиционируемый блок по ширине родителя
-	Это работает если у блока не указана ширина  */
-
-.wrap__item {
-
-}
-
-
-/* растягиваем абсолютно позиционируемый блок на 30px  за пределы родитетя
-   родителя  - работает если у блока не указана ширина  !!! */
-
-.wrap__item {
-
-}
-
-</style>
-    </head>
+        }
+        /* растягиваем абсолютно позиционируемый блок по ширине родителя
+            Это работает если у блока не указана ширина  */
+        .wrap__item {
+            top: -30px;
+            bottom: -30px;
+        }
+        /* растягиваем абсолютно позиционируемый блок на 30px  за пределы родитетя
+           родителя  - работает если у блока не указана ширина  !!! */
+        .wrap__item {
+        }
+    </style>
+</head>
 <body>
 <h1>Растягивам элементы</h1>
-
 <div class="wrap">
     <div class="wrap__item">Inner block</div>
 </div>
-
-
 </body>
 </html>

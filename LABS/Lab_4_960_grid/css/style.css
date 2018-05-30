@@ -4,10 +4,12 @@
  body {
      font: 1rem 'Roboto', sans-serif;
  }
- p {
-     margin-bottom: .5rem;
- }
+
 .well {
     padding: 20px 10px;
     background: lightgray;
+}
+
+.row .row .col {
+    background: lightgreen;
 }
