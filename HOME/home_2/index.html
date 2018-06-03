@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home work 7, part 2</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -39,7 +40,14 @@
                 </div>
                 <div class="col col-6">
                     <div class="slider-img">
-                        <img src="img/image.png" alt="">
+                        <img src="img/image.png" alt="beats">
+                    </div>
+                </div>
+                <div class="col col-12 mt-90">
+                    <div class="points-wrapper">
+                        <div class="slider-point"></div>
+                        <div class="slider-point"></div>
+                        <div class="slider-point"></div>
                     </div>
                 </div>
             </div>
@@ -53,32 +61,46 @@
                     </div>
                     <p class="product-description__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </article>
-                <section class="product-img">
+                <section class="product-img-block">
                     <div class="row">
                         <div class="col col-8">
-                            <div class="product-img__item">
-                                <img src="img/speaker-pill-white-standard-thrqrtleft.png" alt="beats product">
+                            <div class="product-img__item product-img__item_1">
+                                <a class="product-img__link" href="#">
+                                    <p class="minimal-product">Minimal Product<br>Design</p>
+                                    <span class="design"></span>
+                                </a>
                             </div>
                         </div>
                         <div class="col col-4">
-                            <div class="product-img__item">
-                                <img src="img/beats-by-dre-studio-red-highdefinition-headphones.png" alt="beats product">
+                            <div class="product-img__item product-img__item_2">
+                                <a class="product-img__link" href="#">
+                                    <p class="minimal-product">Minimal Product<br>Design</p>
+                                    <span class="design"></span>
+                                </a>
                             </div>
                         </div>
                         <div class="col col-4">
-                            <div class="product-img__item bg-red">
-                                <span class="minimal-product">Minimal Product</span>
-                                <span class="design">Design</span>
+                            <div class="product-img__item product-img__item_3">
+                                <a class="product-img__link" href="#">
+                                    <p class="minimal-product">Minimal Product<br>Design</p>
+                                    <span class="design"></span>
+                                </a>
                             </div>
                         </div>
                         <div class="col col-4">
-                            <div class="product-img__item">
-                                <img src="img/casual-shoes-for-men-2.png" alt="beats product">
+                            <div class="product-img__item product-img__item_4">
+                                <a class="product-img__link" href="#">
+                                    <p class="minimal-product">Minimal Product<br>Design</p>
+                                    <span class="design"></span>
+                                </a>
                             </div>
                         </div>
                         <div class="col col-4">
-                            <div class="product-img__item">
-                                <img src="img/tumblr-nko8p7po0t1qddxjwo3-1280.png" alt="beats product">
+                            <div class="product-img__item product-img__item_5">
+                                <a class="product-img__link" href="#">
+                                    <p class="minimal-product">Minimal Product<br>Design</p>
+                                    <span class="design"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -89,9 +111,12 @@
                     <h2 class="form-news__heading">productman news</h2>
                     <p class="form-news__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </article>
-                <form class="form" action="#">
-                    <input class="form__input" id="emailAddress" type="email" placeholder="Enter your email address">
-                </form>
+                <div class="form-wrapper">
+                    <form class="form" action="#">
+                        <input class="form__input" id="emailAddress" type="email" title="email address" value="&#x2709;    Enter your email address">
+                        <input class="form__subscribe" type="submit" value="subscribe   &#x25ba;">
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="footer">
