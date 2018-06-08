@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500i,900');
+
 body {
     background: #eeeeee;
     font-family: 'Roboto', sans-serif;
@@ -283,12 +285,13 @@ a:hover {
 
 .form {
     width: 100%;
+    position: relative;
 }
 
 .form__input {
     display: inline-block;
     margin: 0 auto;
-    padding: 35px 0 35px 35px;
+    padding: 35px 0 35px 70px;
     border: 0;
     border-radius: 45px 0 0 45px;
     font-size: 18px;
@@ -299,9 +302,24 @@ a:hover {
     font-style: italic;
 }
 
+form:before {
+    content: "\2709	";
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    color: #979797;
+    top: 35px;
+    left: 36px;
+    right: 0;
+    bottom: 0;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
 .form__subscribe {
     display: inline-block;
-    margin: 0 auto;
+    margin-left: -3px;
     padding: 32px 0 33px 0;
     border: 0;
     border-radius: 0 45px 45px 0;
@@ -368,7 +386,7 @@ a:hover {
 }
 
 .icon:hover {
-    color: lightblue;
+    color: #616fe6;
 }
 
 
