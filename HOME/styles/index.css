@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    background: #fdde7e;
+    margin: 0 auto;
+}
+
+.cup-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+
+.cup-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    flex-basis: 360px;
+    padding: 36px 0;
+    border-radius: 5px;
+}
+
+.cup-plan--gold {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    padding: 66px 0;
+}
+
+.cup-plan__prize {
+    color: #02995b;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 1.75px;
+    margin: 37px 0 20px 0;
+}
+
+.cup-plan__img {
+
+}
+
+.cup-plan__title {
+    color: #333333;
+    font-size: 56px;
+    margin: 35px 0 20px 0;
+}
+
+.cup-plan__description {
+    color: #333333;
+    font-size: 20px;
+    padding: 0 100px;
+    text-align: center;
+}
