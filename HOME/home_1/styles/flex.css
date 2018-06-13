@@ -1,0 +1,146 @@
+body {
+    background: #3399cc;
+}
+
+.weather-box {
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    margin: 100px auto;
+    font-size: 0;
+    font-family: sans-serif;
+    border: 5px solid #fff;
+}
+
+.weather-box__item {
+    background: lightblue;
+    padding: 25px 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
+.weather-box__item:hover {
+    filter: grayscale(0);
+}
+
+.weather-box__city {
+    margin-bottom: 10px;
+}
+
+.weather-box__item:last-child {
+    border: 0;
+}
+
+.weather-box__item-1 {
+    width: 50%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-1:hover {
+    background: #3399cc;
+}
+
+.weather-box__item-2 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-2:hover {
+    background: #33cccc;
+}
+
+.weather-box__item-3 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+}
+
+.weather-box__item-3:hover {
+    background: #996699;
+}
+
+.weather-box__item-4 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-4:hover {
+    background: #c24747;
+}
+
+.weather-box__item-5 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-5:hover {
+    background: #e2674a;
+}
+
+.weather-box__item-6 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-6:hover {
+    background: #ffcc66;
+}
+
+.weather-box__item-7 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+}
+
+.weather-box__item-7:hover {
+    background: #99cc99;
+}
+
+.weather-box__item-8 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-8:hover {
+    background: #669999;
+}
+
+.weather-box__item-9 {
+    width: 50%;
+    background: rgba(0 0 0 0);
+    border-right: 5px solid #fff;
+}
+
+.weather-box__item-9:hover {
+    background: #cc6699;
+}
+
+.weather-box__item-10 {
+    width: 25%;
+    background: rgba(0 0 0 0);
+}
+
+.weather-box__item-10:hover {
+    background: #339966;
+}
+
+.weather-box__item-11 {
+    width: 100%;
+    background: rgba(0 0 0 0);
+}
+
+.weather-box__item-11:hover {
+    background: #666699;
+}
+
+
+
+
