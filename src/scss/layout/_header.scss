@@ -1,0 +1,49 @@
+.top-header {
+  position: relative;
+  margin-bottom: rem(40px);
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 1px;
+    background: $lightYellow;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff url(#{$imgPath}bonfire.svg) no-repeat;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+  @include e(h2) {
+    @include  order(-1);
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
+    color: $headerSlogan;
+    text-transform: uppercase;
+  } // h2
+
+  @include e(h1) {
+    font-size: rem(60px);
+    text-transform: uppercase;
+    color: $lightYellow;
+    margin-bottom: rem(45px);
+  }
+
+} // top-header

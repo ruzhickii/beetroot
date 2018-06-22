@@ -1,0 +1,29 @@
+@mixin pocket {
+  @media screen and (min-width: #{$pocket}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop-s {
+  @media screen and (min-width: #{$laptop-s}) {
+    @content;
+  }
+}
+
+@mixin laptop-m {
+  @media screen and (min-width: #{$laptop-m}) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media screen and (min-width: #{$laptop-l}) {
+    @content;
+  }
+}

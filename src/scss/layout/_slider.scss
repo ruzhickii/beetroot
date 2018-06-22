@@ -1,0 +1,263 @@
+.slider {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 40px;
+
+  &::before {
+    @include pseudo;
+    display: block;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background: $lightYellow;
+  }
+}
+
+.slider-content {
+  @include display(flex);
+  margin-bottom: rem(35px);
+
+  @include e(header) {
+    position: relative;
+    margin-bottom: rem(60px);
+    color: $headerColor;
+    font: {
+      family: $fontFamily;
+      size: rem(36px);
+    }
+
+    &:after {
+      @include pseudo;
+      width: 100px;
+      height: 1px;
+      background: $lightYellow;
+      bottom: -30px;
+      left: calc(50% - 50px);
+    }
+  }
+
+  @include e(title) {
+    color: $headerColor;
+    font: {
+      family: $fontFamily;
+      size: rem(24px);
+    }
+  }
+
+  @include e(description) {
+    font: {
+      family:  $fontFamily;
+      size: rem(14px);
+    }
+    color: $mainColor;
+    text-align: center;
+    text-indent: 14px;
+    line-height: 24px;
+  }
+
+  @include e(line) {
+    width: 20px;
+    height: 4px;
+    background: $lightYellow;
+    margin: 22px 10px;
+    position: relative;
+
+    &::before {
+      @include pseudo-line;
+      left: -15px;
+    }
+
+    &::after {
+      @include pseudo-line;
+      right: -15px;
+    }
+  }
+
+  @include e(link-profile) {
+    font: {
+      family: $fontFamilyLink;
+      size: rem(14px);
+      weight: 700;
+    }
+    color: $headerColor;
+    text-decoration: none;
+    border: 1px solid $lightYellow;
+    padding: 6px 9px 6px 9px;
+    text-transform: uppercase;
+
+
+    &:hover {
+      color: $headerColorLight;
+      text-decoration: none;
+    }
+  }
+}
+
+.slider-content__item {
+  padding: 0 95px;
+  flex: 1;
+
+  @include m(right) {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+}
+
+.slider-box-img{
+  position: relative;
+
+  @include e(corner) {
+      width: 100px;
+      height: 100px;
+      border: 1px solid $lightYellow;
+      position: absolute;
+
+     @include m(top-left) {
+       border: {
+         right: 0;
+         bottom: 0;
+       }
+       left: -10px;
+       top: -10px;
+     }
+
+    @include m(top-right) {
+      border: {
+        left: 0;
+        bottom: 0;
+      }
+      right: -10px;
+      top: -10px;
+    }
+
+    @include m(bottom-right) {
+      border: {
+        right: 0;
+        top: 0;
+      }
+      left: -10px;
+      bottom: -10px;
+    }
+
+    @include m(bottom-left) {
+      border: {
+        left: 0;
+        top: 0;
+      }
+      right: -10px;
+      bottom: -10px;
+    }
+
+  } // corner
+
+
+  @include e(item) {
+    max-width: 100%;
+    border: 1px solid $lightYellow;
+   }
+}
+
+.social-icons {
+  @include display(flex);
+  margin: 30px 0;
+
+  @include e(item) {
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  @include e(item-icon) {
+    text-decoration: none;
+    line-height: 27px;
+    font-size: rem(15px);
+    color: #ccc;
+    transition: .5s;
+
+    @include m(facebook) {
+
+      &:hover {
+        color: $faceBook;
+      }
+    }
+
+    @include m(twitter) {
+
+      &:hover {
+        color: $twitter;
+      }
+    }
+
+    @include m(google) {
+
+      &:hover {
+        color: $google;
+      }
+    }
+
+    @include m(linkedIn) {
+
+      &:hover {
+        color: $linkedIn;
+      }
+    }
+  }
+}
+
+.slider-circle-nav {
+  margin: 40px 0;
+  text-align: center;
+
+  @include e(item) {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $lightYellow;
+    cursor: pointer;
+    margin-right: rem(6px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include m(active) {
+      background: none;
+      border: 1px solid $lightYellow;
+    }
+  }
+}
+
+.slider-nav {
+
+  @include e(item) {
+    font-size: rem(40px);
+    color: $lightYellow;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .6s ease-in;
+
+    .slider:hover & {
+      opacity: 1;
+    }
+
+    &:hover {
+      color: $yellow;
+    }
+
+    @include m(prev) {
+      left: 0;
+    }
+    @include m(next) {
+      right: 0;
+    }
+
+  }
+}

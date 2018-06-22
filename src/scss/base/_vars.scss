@@ -1,0 +1,35 @@
+//fonts
+$google-font:  'https://fonts.googleapis.com/css?family=Ubuntu:400,500';
+$google-fontLink: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+$fontFamily: 'Ubuntu', sans-serif;
+$fontFamilyLink: 'Open Sans', sans-serif;
+$baseFontSize: 16px;
+$fontWeightMedia: 500;
+
+// sizes
+
+// path
+$imgPath: '../i/';
+$fontPath: '../fonts/';
+
+//colors
+$black: #000000;
+$white: #ffffff;
+$yellow: #fdde7e;
+$lightYellow: #ffcc00;
+$mainColor: #333333;
+$headerColor: #666666;
+$headerColorLight: #66666696;
+$grey: #cccccc;
+$headerSlogan: #898f8f;
+$faceBook: #3b5998;
+$twitter: #5da9dd;
+$google: #ea4235;
+$linkedIn: #0274b3;
+
+// media queries
+$pocket: 425px;
+$tablet: 768px;
+$laptop-s: 1024px;
+$laptop-m: 1280px;
+$laptop-l: 1920px;
