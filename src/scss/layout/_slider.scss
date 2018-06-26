@@ -164,46 +164,52 @@
   margin: 30px 0;
 
   @include e(item) {
-    border: 2px solid #cccccc;
+    border: 2px solid #000;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     margin-right: 5px;
   }
 
   @include e(item-icon) {
-    text-decoration: none;
-    line-height: 27px;
-    font-size: rem(15px);
-    color: #ccc;
-    transition: .5s;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 5px auto;
+    background-image: url("../../i/sprite.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @include m(facebook) {
+      background-position: 0 0;
 
       &:hover {
-        color: $faceBook;
+        background-position: 0 -128px;
       }
     }
 
     @include m(twitter) {
+      background-position: 0 -32px;
 
       &:hover {
-        color: $twitter;
+        background-position: 0 -160px;
       }
     }
 
     @include m(google) {
+      background-position: 0 -64px;
 
       &:hover {
-        color: $google;
+        background-position: 0 -192px;
       }
     }
 
     @include m(linkedIn) {
+      background-position: 0 -96px;
 
       &:hover {
-        color: $linkedIn;
+        background-position: 0 -224px;
       }
     }
   }
