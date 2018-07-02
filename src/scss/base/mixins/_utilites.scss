@@ -1,0 +1,50 @@
+
+@function em($target, $current: $baseFontSize) {
+  @return ($target / $current) * 1em;
+}
+
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}
+
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&_#{$modifier} {
+		@content;
+	}
+}
+
+@mixin mq($width) {
+    @media (min-width: $width) {
+      @content;
+    }
+}
+
+@mixin pseudo() {
+	content: '';
+	position: absolute;
+}
+
+@mixin input() {
+	background: $inputBackground;
+	border-radius: 4px;
+	padding: 10px 0 10px 10px;
+	font-family: $fontFamily;
+	border: 1px solid $borderColor;
+}
+
+@mixin link() {
+	text-decoration: none;
+	color: $linkColor;
+}
+
+@mixin focus() {
+	outline-color: $inputFocus;
+	border: 1px solid $inputFocus;
+	color: $inputFocus;
+}
